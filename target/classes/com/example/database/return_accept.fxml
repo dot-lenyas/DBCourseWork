@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.Controllers.ClientController">
+   <children>
+      <Label layoutX="29.0" layoutY="36.0" prefHeight="31.0" prefWidth="252.0" text="Ваш заказ:">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label fx:id="returnModel" layoutX="29.0" layoutY="83.0" prefHeight="27.0" prefWidth="315.0" text="Модель автомобиля: " />
+      <Label fx:id="returnFullCost" layoutX="29.0" layoutY="122.0" prefHeight="27.0" prefWidth="315.0" text="Стоимость аренды: " />
+      <Label fx:id="returnFullDays" layoutX="29.0" layoutY="166.0" prefHeight="27.0" prefWidth="315.0" text="Срок аренды: " />
+      <Button layoutX="29.0" layoutY="209.0" mnemonicParsing="false" onAction="#GetInfoReturn" prefHeight="25.0" prefWidth="156.0" text="Получить информацию" />
+      <Button layoutX="29.0" layoutY="268.0" mnemonicParsing="false" prefHeight="25.0" onAction="#returnCar" prefWidth="156.0" text="Сдать авто" />
+   </children>
+</AnchorPane>

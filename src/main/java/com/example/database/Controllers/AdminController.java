@@ -37,7 +37,8 @@ public class AdminController {
     private void AddAutoToDB() throws SQLException {
         DataBaseHandler dataBaseHandler = new DataBaseHandler();
         Statement statement = dataBaseHandler.GetConnection().createStatement();
-        statement.execute("INSERT INTO Автомобиль (Модель_автомобиля , Объем_двигателя, Мощность_двигателя, Коробка_передач, Стоимость_за_сутки) values('"+model_auto.getText()+"', '"+volume_auto.getText()+"', '"+power_auto.getText()+"', '"+transmission_auto.getText()+"', '"+cost_auto.getText()+"')");
+        boolean flag = true;
+        statement.execute("INSERT INTO Автомобиль (Модель_автомобиля , Объем_двигателя, Мощность_двигателя, Коробка_передач, Стоимость_за_сутки, Статус_наличия) values('"+model_auto.getText()+"', '"+volume_auto.getText()+"', '"+power_auto.getText()+"', '"+transmission_auto.getText()+"', '"+cost_auto.getText()+"', '"+flag+"')");
         model_auto.getScene().getWindow().hide();
         dataBaseHandler.GetConnection().close();
     }
