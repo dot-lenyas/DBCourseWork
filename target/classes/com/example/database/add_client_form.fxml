@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.Controllers.ClientController">
+   <children>
+      <Label layoutX="31.0" layoutY="33.0" prefHeight="30.0" prefWidth="181.0" text="Введите паспортные данные" />
+      <TextField layoutX="31.0" layoutY="63.0" fx:id="passport" />
+      <Label layoutX="31.0" layoutY="109.0" prefHeight="30.0" prefWidth="181.0" text="Введите ФИО" />
+      <TextField layoutX="31.0" layoutY="139.0" fx:id="fio" />
+      <Button layoutX="31.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="149.0" text="Сохранить" onAction="#SaveClient" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.Controllers.ClientController">
+   <children>
+      <Label layoutX="25.0" layoutY="116.0" prefHeight="26.0" prefWidth="191.0" text="Введите количество суток" />
+      <TextField fx:id="days" layoutX="26.0" layoutY="150.0" prefHeight="25.0" prefWidth="149.0" />
+      <ComboBox fx:id="Combobox" layoutX="25.0" layoutY="43.0" prefWidth="150.0" promptText="Выберите авто">
+      </ComboBox>
+      <Button layoutX="51.0" layoutY="74.0" mnemonicParsing="false" onAction="#Refresh" prefHeight="25.0" prefWidth="101.0" text="Обновить" />
+      <Label fx:id="CostLabel" layoutX="26.0" layoutY="201.0" prefHeight="26.0" prefWidth="311.0" text="Итоговая стоимость:" />
+      <Button layoutX="25.0" layoutY="236.0" mnemonicParsing="false" onAction="#CalculateCost" text="Посчитать" />
+      <Button layoutX="25.0" layoutY="287.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" text="Оформить заказ" onAction="#createOrder" />
+   </children>
+</AnchorPane>

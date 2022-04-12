@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.Controllers.AdminController">
+   <children>
+      <TextField fx:id="model_auto" layoutX="30.0" layoutY="53.0" />
+      <TextField fx:id="volume_auto" layoutX="30.0" layoutY="111.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="30.0" layoutY="28.0" prefHeight="17.0" prefWidth="149.0" text="Модель автомобиля" />
+      <Label layoutX="30.0" layoutY="84.0" prefHeight="17.0" prefWidth="149.0" text="Объем двигателя" />
+      <TextField fx:id="power_auto" layoutX="30.0" layoutY="169.0" />
+      <Label layoutX="30.0" layoutY="146.0" prefHeight="17.0" prefWidth="149.0" text="Мощность двигателя" />
+      <TextField fx:id="transmission_auto" layoutX="30.0" layoutY="227.0" />
+      <Label layoutX="30.0" layoutY="200.0" prefHeight="17.0" prefWidth="149.0" text="Коробка передач" />
+      <TextField fx:id="cost_auto" layoutX="30.0" layoutY="282.0" />
+      <Label layoutX="30.0" layoutY="259.0" prefHeight="17.0" prefWidth="149.0" text="Стоимость за сутки" />
+      <Button layoutX="30.0" layoutY="332.0" mnemonicParsing="false" onAction="#AddAutoToDB" prefHeight="52.0" prefWidth="149.0" text="Сохранить" />
+   </children>
+</AnchorPane>

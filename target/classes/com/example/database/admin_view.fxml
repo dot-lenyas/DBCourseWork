@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.Controllers.AdminController">
+   <children>
+      <Button layoutX="28.0" layoutY="176.0" mnemonicParsing="false" onAction="#AddAutoForm" prefHeight="75.0" prefWidth="242.0" text="Добавить новый автомобиль в систему" />
+      <Button layoutX="312.0" layoutY="176.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="242.0" text="Изменить информацию об автомобиле" />
+      <Label layoutX="143.0" layoutY="74.0" prefHeight="75.0" prefWidth="314.0" text="Здравствуйте, вы на панели администратора! Выберите нужное действие" wrapText="true" />
+   </children>
+</AnchorPane>
